@@ -49,11 +49,11 @@
 .home-content-subheading{
     width:100%;
     height: 20%;
-    background-color: black;
+    background-color: #414146;;
 }
 
 .home-content-subheading a{
-    color: white;
+    color: whitesmoke;
     width:100%;
     height:100%;
     text-decoration: none;

@@ -1,12 +1,9 @@
-import Navbar from "./Navbar";
-import Slider from "./Slider";
-import Footer from "./Footer";
+import Slider from "../Slider/Slider";
 import "./Home.css";
 
 function Home() {
   return (
     <>
-      <Navbar />
       <div className="home">
         <Slider />
       </div>
@@ -39,7 +36,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

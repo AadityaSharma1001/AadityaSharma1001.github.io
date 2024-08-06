@@ -1,10 +1,11 @@
 .home-end{
     width:100%;
     height:10%;
-    background-color: #0f1111;
+    background-color: black;
     color: #f08804;
     display:flex;
     padding-bottom: 5%;
+    font-weight: 600;
 }
 .home-end-about-us{
     width: 40%;
@@ -35,16 +36,17 @@
 }
 
 .home-end-contact-info ul li a{
-    color:#f08804;
+    color: #f08804;
     display: inline-block;
     width:40%;
     font-size: 100%;
     margin-left: 1%;
+    text-decoration: none;
 }
 
 .home-end-contact-info button{
     display: inline-block;
-    background-color: #0f1111;
+    background-color: black;
     color: #f08804;
     border-color: white;
     border-radius: 20%;

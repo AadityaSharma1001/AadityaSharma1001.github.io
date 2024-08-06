@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+}
+
+.contact-heading {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.contact-heading span {
+  color: rgba(220, 70, 6, 1);
+  font-size: 3em;
+  font-weight: 650;
+}
+.contact-heading p {
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 0.5%;
+}
+
+.contact-us {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form {
+  width: 40%;
+  padding-top: 2%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form form {
+  width: 100%;
+  text-align: center; /* Center text content inside the form */
+}
+
+.form-heading {
+  color: whitesmoke;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-form input {
+  background-color: #0f1111;
+  display: block;
+  width: 95%;
+  padding: 2%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  outline-color: whitesmoke;
+  transition: all 0.5s ease;
+  caret-color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.contact-form textarea {
+  background-color: #0f1111;
+  display: block;
+  width: 95%;
+  padding: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  outline-color: whitesmoke;
+  transition: all 0.5s ease;
+  caret-color: whitesmoke;
+  font-size: 1.5em;
+  resize: vertical;
+}
+
+.contact-form button {
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 25%;
+  background-color: rgba(220, 70, 6, 0.8);
+  color: whitesmoke;
+  padding: 1%;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 3%;
+  cursor: pointer;
+  display: block;
+  transition: all 0.5s;
+}
+
+.contact-form button:hover {
+  background-color: rgba(220, 70, 6, 1);
+}
+
+.contact-form input.focused,
+.contact-form textarea.focused {
+  outline: 1px solid rgba(220, 70, 6, 1);
+  outline-color: rgba(220, 70, 6, 1);
+}
+
+.contact-info {
+  width: 45%;
+  padding-top: 2%;
+  margin-left: 5%;
+}
+
+.contact-info h2 {
+  color: whitesmoke;
+  font-size: 2em;
+  font-weight: 600;
+
+}
+
+.contact-info ul li{
+    color:whitesmoke;
+    display: block;
+    list-style-type: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1.5em;
+}
+
+.contact-info ul li i{
+    margin-right: 1%;
+}
+
+.contact-info ul li a{
+    color: whitesmoke;
+    display: inline-block;
+    width:40%;
+    font-size: 100%;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover{
+    color: rgba(220, 70, 6, 1);
+}
