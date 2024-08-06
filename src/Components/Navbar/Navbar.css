@@ -14,15 +14,13 @@
 .image{
   height: 100%;
   width: 10%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 12%;
 }
 
 .navbar-content{
   height: 100%;
   width: 60%;
-  margin-left: 6%;
-  margin-right:6%;
+  margin-left:16%;
   display: flex;
 
 }
