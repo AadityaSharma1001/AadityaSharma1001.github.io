@@ -82,7 +82,7 @@
   background-color: #f08804;
   color: black;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     height: auto;
     flex-direction: column;

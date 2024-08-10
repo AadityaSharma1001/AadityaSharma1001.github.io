@@ -5,8 +5,10 @@
 
 .contact {
   width: 100%;
-  height: 80vh;
+  min-height: 80vh; /* Use min-height for flexibility */
   background-color: black;
+  padding-bottom: 5%; /* Ensure space before footer */
+  box-sizing: border-box; /* Include padding in height calculations */
 }
 
 .contact-heading {
@@ -19,6 +21,7 @@
   font-size: 3em;
   font-weight: 650;
 }
+
 .contact-heading p {
   color: whitesmoke;
   font-size: 1.5em;
@@ -29,15 +32,18 @@
 .contact-us {
   display: flex;
   width: 100%;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-around; /* Distribute items evenly */
 }
 
 .contact-form {
+  margin-left: 10%;
   width: 40%;
   padding-top: 2%;
-  margin-left: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .contact-form form {
@@ -114,38 +120,87 @@
 .contact-info {
   width: 45%;
   padding-top: 2%;
-  margin-left: 5%;
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .contact-info h2 {
   color: whitesmoke;
   font-size: 2em;
   font-weight: 600;
-
 }
 
-.contact-info ul li{
-    color:whitesmoke;
-    display: block;
-    list-style-type: none;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 1.5em;
+.contact-info ul li {
+  color: whitesmoke;
+  display: block;
+  list-style-type: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.5em;
 }
 
-.contact-info ul li i{
-    margin-right: 1%;
+.contact-info ul li i {
+  margin-right: 1%;
 }
 
-.contact-info ul li a{
-    color: whitesmoke;
-    display: inline-block;
-    width:40%;
-    font-size: 100%;
-    margin-left: 1%;
-    text-decoration: none;
+.contact-info ul li a {
+  color: whitesmoke;
+  display: inline-block;
+  width: 40%;
+  font-size: 100%;
+  margin-left: 1%;
+  text-decoration: none;
 }
 
-.contact-info ul li a:hover{
-    color: rgba(220, 70, 6, 1);
+.contact-info ul li a:hover {
+  color: rgba(220, 70, 6, 1);
+}
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  .contact-us {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    padding-bottom: 5%; /* Add extra padding */
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 80%; /* Make each section take up more space */
+    margin-left: 0;
+    margin-bottom: 3%; /* Add space between sections */
+  }
+
+  .contact-form button {
+    width: 50%; /* Make the button wider on smaller screens */
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 480px) {
+  .contact-heading span {
+    font-size: 2em; /* Reduce heading size */
+  }
+
+  .contact-heading p {
+    font-size: 1.2em; /* Reduce subheading size */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.2em; /* Reduce input font size */
+    padding: 3%; /* Increase padding for better touch targets */
+  }
+
+  .contact-form button {
+    font-size: 1.2em; /* Reduce button font size */
+    width: 60%; /* Make button wider */
+  }
+
+  .contact-info h2 {
+    font-size: 1.8em; /* Reduce info heading size */
+  }
+
+  .contact-info ul li {
+    font-size: 1.2em; /* Reduce list item font size */
+  }
 }
