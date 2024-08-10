@@ -37,7 +37,6 @@ export default function Contact() {
           </div>
           <div className="contact-info">
           <h2>Contact Info</h2>
-          <br/>
           <ul>
             <li>
               <i

@@ -1,0 +1,369 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #e0e0e0;
+    transition: background-color 1s ease;
+}
+
+body:hover {
+    background-color: #1a1a1a;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #181818, #333);
+    color: #f0a500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    animation: header-glow 5s infinite alternate ease-in-out;
+}
+/* Content Section Styles */
+.content {
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a); /* Darker gradient for consistency */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.content:hover::before {
+    opacity: 1;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #ffd700; /* Gold color for a shiny effect */
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+}
+
+.content p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Lighter color for better readability */
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #f0a500, #ffd700);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #f2f2f2;
+}
+
+
+.initiatives {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #222, #333);
+    transition: background-color 0.6s ease;
+}
+
+
+.content {
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a); /* Darker gradient for consistency */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.content:hover::before {
+    opacity: 1;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #ffd700; /* Gold color for a shiny effect */
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+}
+
+.content p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Lighter color for better readability */
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Call-to-Action Section Styles */
+.call-to-action {
+    background: linear-gradient(135deg, #1e90ff, #1c1c98);
+    color: #fff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-position 0.4s ease;
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+}
+
+.call-to-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+    transition: transform 0.7s ease;
+}
+
+.call-to-action:hover::before {
+    transform: translateX(150%);
+}
+
+.call-to-action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    background-position: 100% 50%;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    position: relative;
+    z-index: 2;
+}
+
+
+.cta-button {
+    background-color: #ffd700;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+/*Add a shine effect */
+.call-to-action:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.call-to-action:hover:before {
+    opacity: 1;
+}
+
+/* Initiative Block Styles */
+.initiative-block {
+    background: linear-gradient(135deg, #444, #555);
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem;
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.initiative-block:hover {
+    background: linear-gradient(135deg, #555, #666);
+    border-color: #888;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transform: scale(1.05);
+}
+
+.initiative-block:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.initiative-block:hover:before {
+    opacity: 1;
+}
+
+.initiative-block h2 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.initiative-block:hover h2 {
+    color: #ffcc00;
+    border-bottom-color: #ffcc00;
+}
+
+.initiative-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    z-index: 1;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.initiative-block:hover p {
+    color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 1.5rem;
+    text-align: center;
+    color: #ccc;
+    transition: background-color 0.6s ease;
+}
+
+footer:hover {
+    background-color: #222;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+@keyframes header-glow {
+    0% {
+        box-shadow: 0 0 15px #f0a500;
+    }
+    100% {
+        box-shadow: 0 0 25px #ffd700;
+    }
+}
+
+@media (max-width: 768px) {
+    .initiative-block {
+        max-width: 90%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (horizontal scrollbar) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scroll thumb (the draggable part) */
+    border-radius: 10px; /* Roundness of the scroll thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scroll thumb on hover */
+  }

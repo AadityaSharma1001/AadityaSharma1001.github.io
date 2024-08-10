@@ -50,8 +50,8 @@ const Slider = () => {
             className="slide"
             style={{ backgroundImage: `url(${images[currentIndex].url})` }}
           ></a>
-        </div>
-        <div className="title">{images[currentIndex].title}</div>
+          <div className="title">{images[currentIndex].title}</div>
+        </div>        
     </>
   );
 };

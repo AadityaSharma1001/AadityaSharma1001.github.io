@@ -12,12 +12,12 @@ function Navbar({isActive}) {
           </div>
           <div className='content' id='INITIATIVES'>
             <NavLink className= "links" to="/initiatives" activeClassName="active">INITIATIVES</NavLink>
-              <div className='dropdown-content'>
+              {/* <div className='dropdown-content'>
                 <NavLink className= "links" to="/CampusCeo" activeClassName="active">CAMPUS CEO</NavLink>
                 <NavLink className= "links" to="/JobFair" activeClassName="active">JOB FAIR</NavLink>
                 <NavLink className= "links" to="/blog" activeClassName="active">BLOG</NavLink>
                 <NavLink className= "links" to="/InternshipPortal" activeClassName="active">INTERNSHIP PORTAL</NavLink>
-              </div>
+              </div> */}
           </div>
           <div className='content' id='E-SUMMIT'>
             <NavLink className= "links" to="/E-Summit" activeClassName="active">E-SUMMIT</NavLink>

@@ -4,9 +4,7 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <div className="home">
-        <Slider />
-      </div>
+      <Slider />
       <div className="home-content">
         <div className="home-content-heading">OUR INITIATIVES</div>
         <div className="home-content-links">
